@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Valoración gratuita de tu vivienda en Las Palmas | Urbacán Real Estate</title>
+<meta name="description" content="¿Vendes tu piso en Las Palmas de Gran Canaria? Te decimos cuánto vale, gratis y sin compromiso. Atención personal de Urbacán Real Estate.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://valoracion.urbacanrealestate.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Vendes tu piso en Las Palmas? Te decimos cuánto vale">
+<meta property="og:description" content="Valoración gratuita y sin compromiso. Atención personal de Urbacán Real Estate.">
+<meta property="og:url" content="https://valoracion.urbacanrealestate.com/">
+<meta name="theme-color" content="#12303a">
+<style>
+:root{
+  --ink:#14232a; --muted:#51636b; --bg:#f6f3ee; --card:#ffffff; --line:#e3ddd2;
+  --brand:#12303a; --brand-2:#1d4b59; --accent:#c8873a; --accent-dark:#a96d27;
+  --wa:#1fa855; --wa-dark:#17883f; --err:#b3261e; --ok:#1d6b43;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+a{color:var(--brand-2)}
+.wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{background:var(--brand);color:#fff}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:60px}
+.logo{font-weight:700;letter-spacing:.2px;font-size:1.05rem}
+.logo small{display:block;font-weight:400;font-size:.72rem;opacity:.75;letter-spacing:.6px;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 22px;font-size:1rem;font-weight:650;cursor:pointer;text-decoration:none;line-height:1.2;transition:transform .08s ease,background .15s ease}
+.btn:active{transform:translateY(1px)}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dark)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55);padding:9px 16px;font-size:.9rem}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn[disabled]{opacity:.65;cursor:default}
+.hero{background:linear-gradient(180deg,var(--brand) 0%,var(--brand-2) 100%);color:#fff;padding:34px 0 54px}
+.hero-grid{display:grid;gap:28px}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.8px;text-transform:uppercase;color:#f1d3a6;font-weight:650;margin-bottom:10px}
+h1{font-size:clamp(1.85rem,6vw,2.9rem);line-height:1.12;margin:0 0 14px;letter-spacing:-.4px}
+.lead{font-size:1.08rem;opacity:.93;margin:0 0 18px;max-width:34em}
+.checks{list-style:none;padding:0;margin:0 0 6px;display:grid;gap:8px}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-size:.98rem}
+.checks li::before{content:"";flex:0 0 20px;height:20px;margin-top:2px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.4l3 3 6-6.3' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.formcard{background:var(--card);color:var(--ink);border-radius:var(--radius);padding:22px;box-shadow:0 18px 40px rgba(8,25,31,.28)}
+.formcard h2{margin:0 0 4px;font-size:1.3rem}
+.formcard p.sub{margin:0 0 16px;color:var(--muted);font-size:.93rem}
+label{display:block;font-size:.88rem;font-weight:600;margin:12px 0 5px}
+input[type=text],input[type=tel],select{width:100%;padding:13px 14px;font-size:1rem;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);font-family:inherit}
+input:focus,select:focus{outline:none;border-color:var(--brand-2);box-shadow:0 0 0 3px rgba(29,75,89,.16)}
+.row2{display:grid;gap:0 12px}
+.consent{display:flex;gap:10px;align-items:flex-start;margin:16px 0 14px;font-size:.82rem;color:var(--muted);line-height:1.45}
+.consent input{margin-top:3px;width:18px;height:18px;flex:0 0 18px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.msg{display:none;margin-top:12px;padding:11px 13px;border-radius:10px;font-size:.92rem}
+.msg.err{display:block;background:#fbeceb;color:var(--err)}
+.thanks{display:none;text-align:center;padding:6px 0}
+.thanks h3{margin:6px 0 6px;font-size:1.3rem;color:var(--ok)}
+.thanks p{margin:0 0 14px;color:var(--muted)}
+.alt{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);text-align:center;font-size:.9rem;color:var(--muted)}
+.alt .btn{margin-top:8px;width:100%}
+section{padding:46px 0}
+h2.s{font-size:clamp(1.4rem,4.2vw,1.9rem);margin:0 0 8px;letter-spacing:-.2px}
+p.s{color:var(--muted);margin:0 0 26px;max-width:38em}
+.steps{display:grid;gap:14px;counter-reset:n}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 20px 66px;position:relative}
+.step::before{counter-increment:n;content:counter(n);position:absolute;left:18px;top:18px;width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.step h3{margin:0 0 4px;font-size:1.05rem}
+.step p{margin:0;color:var(--muted);font-size:.95rem}
+.zones{display:flex;flex-wrap:wrap;gap:8px}
+.zones span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.92rem}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 16px}
+.faq summary{cursor:pointer;font-weight:650;padding:15px 0;list-style:none;position:relative;padding-right:24px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:0;top:12px;font-size:1.35rem;color:var(--accent)}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 15px;color:var(--muted);font-size:.95rem}
+.final{background:var(--brand);color:#fff;text-align:center;border-radius:var(--radius);padding:34px 20px}
+.final h2{margin:0 0 8px;font-size:1.6rem}
+.final p{margin:0 0 18px;opacity:.9}
+footer{padding:30px 0 40px;color:var(--muted);font-size:.83rem;text-align:center}
+footer a{color:var(--muted)}
+@media(min-width:820px){
+  .hero{padding:52px 0 64px}
+  .hero-grid{grid-template-columns:1.1fr .9fr;align-items:start;gap:44px}
+  .row2{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .step{padding:70px 20px 20px}
+  .step::before{left:20px;top:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="logo">Urbacán Real Estate<small>Las Palmas de Gran Canaria</small></div>
+    <a class="btn btn-ghost" href="#valoracion" data-track="cabecera">Pedir valoración</a>
+  </div>
+</header>
+
+<main>
+<div class="hero" id="valoracion">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Propietarios en Las Palmas</span>
+      <h1>¿Vendes tu piso en Las Palmas? Te decimos cuánto vale.</h1>
+      <p class="lead">Valoración gratuita y sin compromiso de tu vivienda en la capital. Te atendemos personalmente y te damos un precio realista, no una cifra para engancharte.</p>
+      <ul class="checks">
+        <li>Gratis y sin compromiso de ningún tipo</li>
+        <li>Atención personal: hablas con una persona, no con un call center</li>
+        <li>Te respondemos en un día laborable</li>
+      </ul>
+    </div>
+
+    <div class="formcard">
+      <div id="formbox">
+        <h2>Pide tu valoración gratuita</h2>
+        <p class="sub">Cuéntanos lo básico (1 minuto) y te llamamos.</p>
+        <form id="f" novalidate>
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="given-name" maxlength="80" required>
+          <label for="tel">Teléfono</label>
+          <input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" placeholder="Para llamarte o escribirte" required>
+          <div class="row2">
+            <div>
+              <label for="zona">Zona de tu vivienda</label>
+              <select id="zona" name="zona" required>
+                <option value="">Elige zona…</option>
+                <option>La Isleta</option>
+                <option>Guanarteme</option>
+                <option>Triana / Vegueta</option>
+                <option>Las Canteras</option>
+                <option>Alcaravaneras / Ciudad Jardín</option>
+                <option>Schamann / Escaleritas</option>
+                <option>Las Torres / Siete Palmas</option>
+                <option>Tamaraceite / San Lorenzo</option>
+                <option>Otra zona de Las Palmas</option>
+              </select>
+            </div>
+            <div>
+              <label for="tipo">Tipo de vivienda</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Elige tipo…</option>
+                <option>Piso</option>
+                <option>Casa / chalet</option>
+                <option>Ático / dúplex</option>
+                <option>Local / otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="hp" aria-hidden="true"><label>No rellenar<input id="web" name="web" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <label class="consent" for="ok">
+            <input id="ok" name="ok" type="checkbox">
+            <span id="consenttext">Acepto que Urbacán Real Estate use mis datos para contactarme sobre la valoración de mi vivienda. Puedo retirar mi consentimiento cuando quiera. Más información en la <a href="https://urbacanrealestate.com/politica-privacidad" target="_blank" rel="noopener">política de privacidad</a>.</span>
+          </label>
+          <button class="btn btn-accent" id="send" type="submit" style="width:100%">Quiero mi valoración gratuita</button>
+          <div class="msg" id="err" role="alert"></div>
+        </form>
+        <div class="alt">
+          ¿Prefieres escribirnos tú?
+          <a class="btn btn-wa" data-wa="hero" href="#">Hablar por WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="thanks" id="thanks">
+        <h3>Gracias, te escribiremos en breve</h3>
+        <p>Hemos recibido tus datos. Si quieres ir adelantando, puedes escribirnos ya por WhatsApp.</p>
+        <a class="btn btn-wa" data-wa="formulario" href="#" style="width:100%">Abrir WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="s">Cómo funciona</h2>
+    <p class="s">Tres pasos, sin papeleo ni letra pequeña.</p>
+    <div class="steps">
+      <div class="step"><h3>Nos cuentas de tu vivienda</h3><p>Zona, tipo y poco más. Con el formulario o por WhatsApp, lo que te resulte más cómodo.</p></div>
+      <div class="step"><h3>La vemos contigo</h3><p>Concertamos una visita corta para ver la vivienda y entender tu situación y tus plazos.</p></div>
+      <div class="step"><h3>Te damos una valoración realista</h3><p>Un precio de mercado con su razonamiento, y si quieres, un plan para venderla. Decides tú.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2 class="s">Trabajamos en toda la capital</h2>
+    <p class="s">Del norte de La Isleta a Siete Palmas, pasando por Guanarteme, Triana, Las Torres y el resto de barrios de Las Palmas de Gran Canaria.</p>
+    <div class="zones">
+      <span>La Isleta</span><span>Guanarteme</span><span>Las Canteras</span><span>Triana</span><span>Vegueta</span><span>Alcaravaneras</span><span>Ciudad Jardín</span><span>Schamann</span><span>Escaleritas</span><span>Las Torres</span><span>Siete Palmas</span><span>Tamaraceite</span><span>Y más barrios</span>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap faq">
+    <h2 class="s">Preguntas frecuentes</h2>
+    <p class="s">Lo que más nos preguntan los propietarios.</p>
+    <details><summary>¿Cuesta algo la valoración?</summary><p>No. La valoración es gratuita y no te obliga a nada. Puedes quedarte con el precio y decidir con calma.</p></details>
+    <details><summary>¿Me comprometo a vender con vosotros?</summary><p>No. Primero valoramos. Si después quieres que nos encarguemos de la venta, lo hablamos y te explicamos las condiciones con claridad antes de firmar nada.</p></details>
+    <details><summary>¿Qué necesito para pedirla?</summary><p>Solo tu nombre, un teléfono y la zona. En la visita vemos el resto: metros, estado, reformas y documentación.</p></details>
+    <details><summary>¿Cuándo me contactáis?</summary><p>En un día laborable. Si lo prefieres, escríbenos por WhatsApp y te contestamos por ahí.</p></details>
+    <details><summary>¿Qué hacéis con mis datos?</summary><p>Solo los usamos para contactarte sobre la valoración de tu vivienda. Puedes pedir que los borremos cuando quieras. Más detalle en la <a href="https://urbacanrealestate.com/politica-privacidad" target="_blank" rel="noopener">política de privacidad</a>.</p></details>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="final">
+      <h2>Saber cuánto vale tu casa no cuesta nada</h2>
+      <p>Cuéntanos tu caso y te damos una valoración realista.</p>
+      <a class="btn btn-accent" href="#valoracion" data-track="final">Pedir mi valoración gratuita</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Urbacán Real Estate · Las Palmas de Gran Canaria<br>
+    <a href="https://urbacanrealestate.com/aviso-legal" target="_blank" rel="noopener">Aviso legal</a> ·
+    <a href="https://urbacanrealestate.com/politica-privacidad" target="_blank" rel="noopener">Política de privacidad</a> ·
+    <a href="https://urbacanrealestate.com/politica-cookies" target="_blank" rel="noopener">Cookies</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var PAGE='valoracion';
+  var SB_URL='https://jbojoeifhrdjyqvfbapd.supabase.co';
+  var SB_KEY='sb_publishable_UXO8yRZbDuQtBstizm7nGg_hu30f373';
+  var WA_NUMBER='34642734058';
+  var WA_TEXT='Hola, quiero una valoración gratuita de mi vivienda en Las Palmas';
+
+  function waLink(){return 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(WA_TEXT);}
+
+  function post(table,body,keepalive){
+    try{
+      return fetch(SB_URL+'/rest/v1/'+table,{
+        method:'POST',
+        headers:{'apikey':SB_KEY,'Content-Type':'application/json','Prefer':'return=minimal'},
+        body:JSON.stringify(body),
+        keepalive:!!keepalive
+      });
+    }catch(e){return Promise.reject(e);}
+  }
+  function track(event,button){
+    try{
+      post('landing_events',{page:PAGE,event:event,button:button||null,referrer:(document.referrer||'').slice(0,300)||null,ua:(navigator.userAgent||'').slice(0,300)},true).catch(function(){});
+    }catch(e){}
+  }
+
+  // visita
+  track('page_view');
+
+  // enlaces de WhatsApp
+  var was=document.querySelectorAll('[data-wa]');
+  for(var i=0;i<was.length;i++){
+    (function(a){
+      a.setAttribute('href',waLink());
+      a.setAttribute('target','_blank');
+      a.setAttribute('rel','noopener');
+      a.addEventListener('click',function(){track('whatsapp_click',a.getAttribute('data-wa'));});
+    })(was[i]);
+  }
+
+  // formulario
+  var f=document.getElementById('f'),err=document.getElementById('err'),send=document.getElementById('send');
+  function showErr(t){err.textContent=t;err.className='msg err';}
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    err.className='msg';
+    if(document.getElementById('web').value){return;} // honeypot
+    var nombre=f.nombre.value.trim(), tel=f.tel.value.replace(/[\s.\-()]/g,''), zona=f.zona.value, tipo=f.tipo.value;
+    if(nombre.length<2){return showErr('Escribe tu nombre.');}
+    if(!/^\+?\d{9,15}$/.test(tel)){return showErr('Revisa el teléfono: debe tener al menos 9 cifras.');}
+    if(!zona){return showErr('Elige la zona de tu vivienda.');}
+    if(!tipo){return showErr('Elige el tipo de vivienda.');}
+    if(!f.ok.checked){return showErr('Necesitamos tu consentimiento para poder contactarte.');}
+    send.disabled=true; send.textContent='Enviando…';
+    post('landing_leads',{
+      page:PAGE,name:nombre,phone:tel,zona:zona,tipo:tipo,consent:true,
+      consent_text:document.getElementById('consenttext').textContent.trim().slice(0,600),
+      ua:(navigator.userAgent||'').slice(0,300),referrer:(document.referrer||'').slice(0,300)||null
+    }).then(function(r){
+      if(r&&r.status===201){
+        document.getElementById('formbox').style.display='none';
+        document.getElementById('thanks').style.display='block';
+      }else{
+        send.disabled=false; send.textContent='Quiero mi valoración gratuita';
+        showErr('No hemos podido enviarlo. Inténtalo de nuevo o escríbenos por WhatsApp.');
+      }
+    }).catch(function(){
+      send.disabled=false; send.textContent='Quiero mi valoración gratuita';
+      showErr('No hemos podido enviarlo. Inténtalo de nuevo o escríbenos por WhatsApp.');
+    });
+  });
+
+})();
+</script>
+</body>
+</html>
